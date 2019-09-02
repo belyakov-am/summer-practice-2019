@@ -10,7 +10,7 @@ Widget::Widget(QWidget *parent) : QWidget(parent), ui(new Ui::Widget) {
     file.open(QIODevice::ReadOnly);
 
     QStringList headers;
-    headers << tr("Заголовок");
+    headers << tr("Header");
 
     TreeModel *model = new TreeModel(headers, file.readAll());
     file.close();
@@ -36,7 +36,7 @@ void Widget::insertRow() {
     updateActions();
     for (int column = 0; column < model->columnCount(index.parent()); ++column) {
         QModelIndex child = model->index(index.row()+1, column, index.parent());
-        model->setData(child, QVariant("Данные"), Qt::EditRole);
+        model->setData(child, QVariant("Data"), Qt::EditRole);
     }
 }
 

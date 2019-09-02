@@ -1,4 +1,3 @@
-#include "mainwindow.h"
 #include <widget.h>
 #include <QApplication>
 #include <QTreeView>
@@ -16,7 +15,7 @@ void writeVectorToFile(QVector<QString> test) {
     QFile file(filename);
     if (file.open(QIODevice::ReadWrite)) {
         QTextStream stream(&file);
-        stream << "Text by qt" << endl;
+        stream << "container" << endl;
 
         for (auto&& str : test) {
             stream << " " << str << endl;

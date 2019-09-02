@@ -26,13 +26,11 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp \
         tree_item.cpp \
         tree_model.cpp \
         widget.cpp
 
 HEADERS += \
-        mainwindow.h \
         tree_item.h \
         tree_model.h \
         widget.h
