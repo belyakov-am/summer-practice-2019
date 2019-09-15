@@ -12,7 +12,7 @@ class Widget : public QWidget {
     Ui::Widget *ui;
 
 public:
-    Widget(QWidget *parent = 0);
+    Widget(QWidget *parent = nullptr);
     void updateActions();
 
 private slots:
@@ -20,7 +20,7 @@ private slots:
     void removeRow();
 
 public slots:
-    void updateActions(const QItemSelection &,const QItemSelection &);
+    void updateActions(const QItemSelection &, const QItemSelection &);
 };
 
 

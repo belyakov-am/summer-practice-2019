@@ -2,7 +2,7 @@
 #include <tree_model.h>
 
 
-TreeModel::TreeModel(const QStringList &header, const QString &data, QObject *parent)
+TreeModel::TreeModel(const QString &data, QObject *parent)
     : QAbstractItemModel(parent) {
     QVector<QVariant> rootData;
     rootData << "Node";

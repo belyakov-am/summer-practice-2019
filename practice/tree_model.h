@@ -11,7 +11,7 @@ class TreeModel : public QAbstractItemModel {
     // always add QObject macro
     Q_OBJECT
 public:
-    explicit TreeModel(const QStringList &header, const QString &data, QObject *parent = nullptr);
+    explicit TreeModel(const QString &data, QObject *parent = nullptr);
     ~TreeModel();
 
     // returns data with given `index` and `role`
